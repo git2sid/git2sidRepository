@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+	<definition name="hello" template="/WEB-INF/templates/default.jsp">
+		<put-attribute name="title" value="Offers Homepage"></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/content.jsp"></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp"></put-attribute>
+			<put-attribute name="menu" value="/WEB-INF/tiles/menu.jsp"></put-attribute>
+			</definition>
+			
+			<definition name="databasePage" extends="hello">
+		
+		<put-attribute name="content" value="/WEB-INF/tiles/databasePage.jsp"></put-attribute>
+		
+			</definition>
+				
+			<definition name="chart" extends="hello">
+		
+		<put-attribute name="content" value="/WEB-INF/jsps/chart.jsp"></put-attribute>
+		
+			</definition>
+			<definition name="getdatausingjquery" extends="hello">
+		
+		<put-attribute name="content" value="/WEB-INF/jsps/getdatausingjquery.jsp"></put-attribute>
+		
+			</definition>
+</tiles-definitions>
